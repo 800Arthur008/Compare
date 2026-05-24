@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff8c52;stop-opacity:0.35" />
+      <stop offset="50%" style="stop-color:#745842;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#4e3522;stop-opacity:0.85" />
+    </linearGradient>
+    <linearGradient id="sky" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#4e3522;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7a5035;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo com gradiente suave do céu -->
+  <rect width="1920" height="600" fill="url(#sky)" />
+  <!-- Overlay colorido -->
+  <rect width="1920" height="600" fill="url(#bannerGrad)" />
+
+  <!-- Morros decorativos no horizonte -->
+  <path d="M0,500 Q400,450 900,480 Q1400,510 1920,460 L1920,600 L0,600 Z" fill="#362417" opacity="0.6" />
+  <path d="M0,520 Q500,490 1000,520 Q1500,480 1920,530 L1920,600 L0,600 Z" fill="#20150d" />
+
+  <!-- Silhueta vetorial estilizada de um cão feliz correndo -->
+  <g transform="translate(1300, 360)" fill="#120c08">
+    <!-- Rabo -->
+    <path d="M10,40 Q-20,10 -10,0 Q5,15 15,30 Z" />
+    <!-- Corpo -->
+    <ellipse cx="65" cy="55" rx="45" ry="25" transform="rotate(-15 65 55)" />
+    <!-- Pernas traseiras -->
+    <path d="M30,70 L15,95 L25,100 L45,75 Z" />
+    <path d="M45,70 L35,98 L45,102 L55,75 Z" />
+    <!-- Pernas dianteiras -->
+    <path d="M85,65 L105,95 L115,90 L95,60 Z" />
+    <path d="M95,60 L115,85 L125,80 L105,58 Z" />
+    <!-- Pescoço e Cabeça -->
+    <path d="M95,45 L115,20 L135,28 L110,50 Z" />
+    <ellipse cx="130" cy="20" rx="18" ry="12" transform="rotate(-20 130 20)" />
+    <!-- Orelhas levantadas -->
+    <path d="M118,12 Q115,-5 122,-10 Q127,-5 125,10 Z" />
+    <path d="M128,8 Q132,-8 138,-12 Q142,-5 135,12 Z" />
+    <!-- Focinho alegre -->
+    <path d="M142,20 L155,25 L150,32 L138,26 Z" />
+  </g>
+
+  <!-- Caixa de instruções de placeholder centralizada à esquerda -->
+  <g transform="translate(150, 220)">
+    <rect width="600" height="120" rx="20" fill="#ffffff" opacity="0.1" stroke="#ffffff" stroke-width="1.5" />
+    <rect width="600" height="120" rx="20" fill="none" stroke="#ffffff" stroke-dasharray="8,8" stroke-width="2" />
+    <text x="300" y="50" font-family="'Montserrat', sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1">IMAGEM DE FUNDO DO BANNER</text>
+    <text x="300" y="85" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="500" fill="#ffcea6" text-anchor="middle">Substitua por seu arquivo: assets/images/banner-bg.jpg</text>
+  </g>
+</svg>

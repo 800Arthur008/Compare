@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="COMPARE - Comitê de Proteção aos Animais de Rua de Exu-PE. Ajude-nos a resgatar, alimentar e cuidar de animais abandonados através da adoção responsável e doações.">
+    <meta name="author" content="COMPARE">
+    <title>COMPARE | Comitê de Proteção aos Animais de Rua de Exu-PE</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Script de Interatividade (Separado) -->
+    <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ==========================================
+         HEADER & HERO SECTION
+         ========================================== -->
+    <header class="main-header" id="inicio">
+        <div class="header-container">
+            <a href="#inicio" class="logo-group">
+                <img src="assets/images/img (9).png" alt="Logo COMPARE" class="header-logo-img">
+                <div class="logo-text-wrapper">
+                    <span class="logo-title">COMPARE</span>
+                    <span class="logo-subtitle">Comitê de Proteção aos<br>Animais de Rua de Exu-PE</span>
+                </div>
+            </a>
+
+            <!-- Botão do Menu Mobile -->
+            <button class="mobile-menu-toggle" aria-label="Abrir Menu" id="menuToggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#historia" class="nav-link">História</a>
+                <a href="#o-que-fazemos" class="nav-link">O Que Fazemos</a>
+                <a href="#galeria" class="nav-link">Galeria</a>
+                <a href="#como-ajudar" class="nav-link">Como Ajudar</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero / Destaque Principal -->
+    <section class="hero-section">
+        <!-- NOTA: Para trocar a imagem do fundo do topo, substitua o arquivo 'hero-bg.jpg' na pasta 'assets/images' 
+             ou altere o caminho no CSS (assets/css/style.css) na classe '.hero-section' -->
+        <div class="hero-overlay"></div>
+
+        <!-- Badges / Estatísticas Flutuantes no Rodapé do Hero -->
+        <div class="hero-badges-container">
+            <div class="hero-badge">
+                <div class="badge-icon">
+                    <!-- Ícone de Pata -->
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12,14c1.66,0,3-1.34,3-3c0-1.66-1.34-3-3-3s-3,1.34-3,3C9,12.66,10.34,14,12,14z M8.5,8.5C9.33,8.5,10,7.83,10,7c0-0.83-0.67-1.5-1.5-1.5S7,6.17,7,7C7,7.83,7.67,8.5,8.5,8.5z M15.5,8.5c0.83,0,1.5-0.67,1.5-1.5c0-0.83-0.67-1.5-1.5-1.5S14,6.17,14,7C14,7.83,14.67,8.5,15.5,8.5z M4.5,12.5C5.33,12.5,6,11.83,6,11c0-0.83-0.67-1.5-1.5-1.5S3,10.17,3,11C3,11.83,3.67,12.5,4.5,12.5z M19.5,12.5c0.83,0,1.5-0.67,1.5-1.5c0-0.83-0.67-1.5-1.5-1.5S18,10.17,18,11C18,11.83,18.67,12.5,19.5,12.5z" />
+                    </svg>
+                </div>
+                <span class="badge-text">+75 animais acolhidos</span>
+            </div>
+
+            <div class="hero-badge">
+                <div class="badge-icon">
+                    <!-- Ícone de Calendário -->
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5z" />
+                    </svg>
+                </div>
+                <span class="badge-text">Desde 2016</span>
+            </div>
+
+            <div class="hero-badge">
+                <div class="badge-icon">
+                    <!-- Ícone de Coração nas Mãos -->
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                </div>
+                <span class="badge-text">Campanhas solidárias</span>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- ==========================================
+             SEÇÃO: NOSSA HISTÓRIA
+             ========================================== -->
+        <section class="story-section" id="historia">
+            <!-- Formas orgânicas decorativas de fundo -->
+            <div class="blob-shape blob-top-right"></div>
+            <div class="blob-shape blob-bottom-left"></div>
+            <div class="line-shape"></div>
+
+            <div class="section-container">
+                <h2 class="section-main-title">NOSSA HISTÓRIA</h2>
+
+                <div class="story-grid">
+                    <!-- Coluna da Imagem -->
+                    <div class="story-image-wrapper">
+                        <img src="assets/images/img (1).png"
+                            alt="Voluntária da COMPARE sorridente segurando no colo um cachorrinho acolhido"
+                            class="story-img">
+                    </div>
+
+                    <!-- Coluna do Texto -->
+                    <div class="story-content">
+                        <h3 class="story-sub-title">NOSSA HISTÓRIA</h3>
+                        <p class="story-paragraph">
+                            A COMPARE nasceu em 2016 com o propósito de cuidar de animais em situação de rua na cidade
+                            de Exu-PE. Desde então, o projeto já acolheu dezenas de animais vítimas de abandono e
+                            maus-tratos, oferecendo alimentação, tratamento e uma nova chance através da adoção
+                            responsável.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             SEÇÃO: O QUE FAZEMOS
+             ========================================== -->
+        <section class="what-we-do-section" id="o-que-fazemos">
+            <div class="section-container">
+                <h2 class="section-main-title text-center">O QUE FAZEMOS</h2>
+
+                <div class="services-grid">
+                    <!-- Card 1: Resgate -->
+                    <article class="service-card">
+                        <div class="service-icon icon-orange">
+                            <!-- Ícone de Pata -->
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12,14c1.66,0,3-1.34,3-3c0-1.66-1.34-3-3-3s-3,1.34-3,3C9,12.66,10.34,14,12,14z M8.5,8.5C9.33,8.5,10,7.83,10,7c0-0.83-0.67-1.5-1.5-1.5S7,6.17,7,7C7,7.83,7.67,8.5,8.5,8.5z M15.5,8.5c0.83,0,1.5-0.67,1.5-1.5c0-0.83-0.67-1.5-1.5-1.5S14,6.17,14,7C14,7.83,14.67,8.5,15.5,8.5z M4.5,12.5C5.33,12.5,6,11.83,6,11c0-0.83-0.67-1.5-1.5-1.5S3,10.17,3,11C3,11.83,3.67,12.5,4.5,12.5z M19.5,12.5c0.83,0,1.5-0.67,1.5-1.5c0-0.83-0.67-1.5-1.5-1.5S18,10.17,18,11C18,11.83,18.67,12.5,19.5,12.5z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Resgate de<br>animais</h3>
+                    </article>
+
+                    <!-- Card 2: Alimentação -->
+                    <article class="service-card">
+                        <div class="service-icon icon-green">
+                            <!-- Ícone de Pote de Ração -->
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M22 18.06c-1.89-1.39-3.95-2.06-6-2.06s-4.11.67-6 2.06c-1.89-1.39-3.95-2.06-6-2.06V20h18v-1.94zM12 5c-1.66 0-3 1.34-3 3 0 2 3 5 3 5s3-3 3-5c0-1.66-1.34-3-3-3zm0 4.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Alimentação</h3>
+                    </article>
+
+                    <!-- Card 3: Tratamentos -->
+                    <article class="service-card">
+                        <div class="service-icon icon-dark">
+                            <!-- Ícone de Maleta Médica / Veterinária -->
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-10-2h4v2h-4V4zm4.5 10h-2v2h-1v-2H9.5v-1h2V9h1v2h2v1z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Tratamentos<br>Veterinários</h3>
+                    </article>
+
+                    <!-- Card 4: Castração -->
+                    <article class="service-card">
+                        <div class="service-icon icon-purple">
+                            <!-- Ícone de Castração (Símbolo de Vênus + Pata) -->
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C8.69 2 6 4.69 6 8c0 2.96 2.14 5.42 5 5.91V16H9v2h3v4h2v-4h3v-2h-3v-2.09c2.86-.49 5-2.95 5-5.91 0-3.31-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Castração</h3>
+                    </article>
+
+                    <!-- Card 5: Campanhas -->
+                    <article class="service-card">
+                        <div class="service-icon icon-gold">
+                            <!-- Ícone de Megafone -->
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-3 11H7v-2h10v2zm0-3H7V8h10v2z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Campanhas<br>solidárias</h3>
+                    </article>
+
+                    <!-- Card 6: Adoção -->
+                    <article class="service-card">
+                        <div class="service-icon icon-teal">
+                            <!-- Ícone de Casinha com Pata -->
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 3L2 12h3v8h14v-8h3L12 3zm0 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Adoção<br>responsável</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             SEÇÃO: GALERIA
+             ========================================== -->
+        <section class="gallery-section" id="galeria">
+            <div class="section-container">
+                <h2 class="section-main-title text-center">GALERIA</h2>
+
+                <!-- Carrossel de Imagens Responsivo -->
+                <div class="gallery-carousel-wrapper">
+                    <button class="carousel-control prev" aria-label="Slide anterior" id="prevBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+
+                    <div class="carousel-track-container">
+                        <div class="carousel-track" id="carouselTrack">
+                            <!-- Slide 1 -->
+                            <div class="carousel-slide">
+                                <div class="gallery-item">
+                                    <img src="assets/images/carrossel-1.png"
+                                        alt="Muitos cães se alimentando sob cuidados da COMPARE" class="gallery-img">
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-slide">
+                                <div class="gallery-item">
+                                    <img src="assets/images/carrossel-2.png"
+                                        alt="Voluntária aplicando vacina em um filhotinho resgatado"
+                                        class="gallery-img">
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="carousel-slide">
+                                <div class="gallery-item">
+                                    <img src="assets/images/carrossel-3.png"
+                                        alt="Cães do abrigo COMPARE alinhados para alimentação coletiva"
+                                        class="gallery-img">
+                                </div>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="carousel-slide">
+                                <div class="gallery-item">
+                                    <img src="assets/images/carrossel-4.png"
+                                        alt="Filhote resgatado deitado na grama olhando curioso" class="gallery-img">
+                                </div>
+                            </div>
+                            <!-- Slide 5 -->
+                            <div class="carousel-slide">
+                                <div class="gallery-item">
+                                    <img src="assets/images/carrossel-5.png"
+                                        alt="Cachorrinho fofo sorridente sentado no abrigo" class="gallery-img">
+                                </div>
+                            </div>
+                            <!-- Slide 6 -->
+                            <div class="carousel-slide">
+                                <div class="gallery-item">
+                                    <img src="assets/images/carrossel-6.png"
+                                        alt="Dois cachorrinhos curiosos no abrigo da COMPARE" class="gallery-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control next" aria-label="Próximo slide" id="nextBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Indicadores (Pontinhos) -->
+                <div class="carousel-indicators" id="carouselIndicators"></div>
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             SEÇÃO: COMO AJUDAR
+             ========================================== -->
+        <section class="how-to-help-section" id="como-ajudar">
+            <div class="section-container">
+                <h2 class="section-main-title text-center">COMO AJUDAR</h2>
+
+                <div class="help-grid">
+                    <!-- Card 1: PIX Solidário -->
+                    <article class="help-card card-pix">
+                        <h3 class="help-title">PIX Solidário</h3>
+                        <p class="help-subtitle">Chave PIX:</p>
+                        <p class="help-pix-key">xxxxxxxxxxxx</p>
+
+                        <div class="qr-code-wrapper">
+                            <!-- NOTA: Para trocar a imagem do QR Code, substitua o arquivo 'qr-code.png' na pasta 'assets/images/' 
+                                 Caso queira mudar o formato (ex: svg), mude 'qr-code.svg' abaixo -->
+                            <img src="assets/images/qr-code.svg" alt="QR Code para realizar doações via PIX"
+                                class="qr-code-img">
+                        </div>
+
+                        <button class="btn btn-light" id="copyPixBtn" data-pix="xxxxxxxxxxxx">
+                            Copiar PIX
+                        </button>
+                    </article>
+
+                    <!-- Card 2: Doação de Alimentos -->
+                    <article class="help-card">
+                        <div class="help-icon">
+                            <!-- Ícone de Mão segurando coração -->
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </div>
+                        <h3 class="help-title-dark">Doação de<br>Alimentos</h3>
+                        <div class="placeholder-text-group">
+                            <p class="help-desc-placeholder">xxxxxxxxxxxxxxxxxxxx</p>
+                            <p class="help-desc-placeholder">xxxxxxxxxxxxxxxxxxxx</p>
+                        </div>
+                        <a href="https://wa.me/5587xxxxxxxxx" target="_blank" rel="noopener"
+                            class="btn btn-dark-filled">
+                            Entregar
+                        </a>
+                    </article>
+
+                    <!-- Card 3: Trabalho Voluntário -->
+                    <article class="help-card">
+                        <div class="help-icon">
+                            <!-- Ícone de Mão Aberta -->
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2A10 10 0 1 0 22 12A10 10 0 0 0 12 2ZM15.7 13.3A2.43 2.43 0 0 1 12 15.75a2.43 2.43 0 0 1-3.7-2.45l.9-4.5a.8.8 0 0 1 1.6 0l-.3 1.5h1.5l-.3-1.5a.8.8 0 0 1 1.6 0l-.3 1.5h1.5a.8.8 0 0 1 .8.8v3.45Z" />
+                            </svg>
+                        </div>
+                        <h3 class="help-title-dark">Trabalho<br>Voluntário</h3>
+                        <div class="placeholder-text-group">
+                            <p class="help-desc-placeholder">xxxxxxxxxxxxxxxxxxxx</p>
+                            <p class="help-desc-placeholder">xxxxxxxxxxxxxxxxxxxx</p>
+                        </div>
+                        <a href="https://forms.gle/xxxxxxxx" target="_blank" rel="noopener" class="btn btn-dark-filled">
+                            Inscreva-se
+                        </a>
+                    </article>
+
+                    <!-- Card 4: Patrocínio -->
+                    <article class="help-card">
+                        <div class="help-icon">
+                            <!-- Ícone de Pata -->
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12,14c1.66,0,3-1.34,3-3c0-1.66-1.34-3-3-3s-3,1.34-3,3C9,12.66,10.34,14,12,14z M8.5,8.5C9.33,8.5,10,7.83,10,7c0-0.83-0.67-1.5-1.5-1.5S7,6.17,7,7C7,7.83,7.67,8.5,8.5,8.5z M15.5,8.5c0.83,0,1.5-0.67,1.5-1.5c0-0.83-0.67-1.5-1.5-1.5S14,6.17,14,7C14,7.83,14.67,8.5,15.5,8.5z M4.5,12.5C5.33,12.5,6,11.83,6,11c0-0.83-0.67-1.5-1.5-1.5S3,10.17,3,11C3,11.83,3.67,12.5,4.5,12.5z M19.5,12.5c0.83,0,1.5-0.67,1.5-1.5c0-0.83-0.67-1.5-1.5-1.5S18,10.17,18,11C18,11.83,18.67,12.5,19.5,12.5z" />
+                            </svg>
+                        </div>
+                        <h3 class="help-title-dark">Patrocínio</h3>
+                        <div class="placeholder-text-group">
+                            <p class="help-desc-placeholder">xxxxxxxxxxxxxxxxxxxx</p>
+                            <p class="help-desc-placeholder">xxxxxxxxxxxxxxxxxxxx</p>
+                        </div>
+                        <a href="https://wa.me/5587xxxxxxxxx" target="_blank" rel="noopener"
+                            class="btn btn-dark-filled">
+                            Falar com a Diretoria
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             SEÇÃO: BANNER DE CHAMADA PARA AÇÃO (CTA)
+             ========================================== -->
+        <section class="cta-banner-section">
+            <!-- NOTA: Para trocar a imagem do fundo do banner, substitua o arquivo 'banner-bg.jpg' na pasta 'assets/images' 
+                 ou altere o caminho no CSS (assets/css/style.css) na classe '.cta-banner-section' -->
+            <div class="cta-overlay"></div>
+
+            <div class="cta-content-container">
+                <h2 class="cta-phrase">
+                    Cada doação ajuda um animal a<br>continuar vivendo com dignidade.
+                </h2>
+                <a href="#como-ajudar" class="btn btn-cta">
+                    Quero Fazer Parte
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ==========================================
+         FOOTER (RODAPÉ) & CONTATO
+         ========================================== -->
+    <footer class="main-footer" id="contato">
+        <div class="footer-container">
+            <!-- Coluna 1: Endereço -->
+            <div class="footer-col">
+                <h3 class="footer-title">Endereço</h3>
+                <div class="footer-text-group">
+                    <p class="footer-text">xxxxxxxxxxxxxxxxxxxx</p>
+                    <p class="footer-text">x</p>
+                </div>
+            </div>
+
+            <!-- Coluna 2: Links -->
+            <div class="footer-col">
+                <h3 class="footer-title">Links</h3>
+                <div class="footer-text-group">
+                    <p class="footer-text">xxxxxxxxxxxxxxxxxxxx</p>
+                    <p class="footer-text">xxxxxx</p>
+                </div>
+            </div>
+
+            <!-- Coluna 3: Redes Sociais -->
+            <div class="footer-col">
+                <h3 class="footer-title">SOCIAL</h3>
+                <div class="social-icons-group">
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/ajudaaosanimaisderuadeexupe" target="_blank" rel="noopener"
+                        class="social-btn instagram-btn" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/5587xxxxxxxxx" target="_blank" rel="noopener" class="social-btn whatsapp-btn"
+                        aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <!-- E-mail -->
+                    <a href="mailto:contato@compare.org" class="social-btn email-btn" aria-label="E-mail">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 COMPARE. Todos os direitos reservados. Comitê de Proteção aos Animais de Rua de Exu-PE.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

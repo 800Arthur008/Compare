@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf8f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#efe7dd;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#2b2724" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <rect width="300" height="400" rx="16" fill="url(#grad2)" />
+  
+  <!-- Círculos concêntricos decorativos -->
+  <circle cx="150" cy="160" r="80" fill="none" stroke="#c3af9b" stroke-width="2" opacity="0.3" stroke-dasharray="8,8" />
+  <circle cx="150" cy="160" r="60" fill="#c3af9b" opacity="0.15" />
+
+  <!-- Seringa e kit médico vetorial -->
+  <g transform="translate(100, 100)">
+    <!-- Cruz médica verde-oliva -->
+    <path d="M40,10 H60 V30 H80 V50 H60 V70 H40 V50 H20 V30 H40 Z" fill="#767043" opacity="0.25" />
+    
+    <!-- Corpo da seringa -->
+    <rect x="42" y="30" width="16" height="50" rx="3" fill="#ffffff" stroke="#2b2724" stroke-width="3" />
+    <!-- Líquido -->
+    <rect x="45" y="45" width="10" height="32" fill="#ff8c52" opacity="0.8" />
+    <!-- Êmbolo -->
+    <rect x="48" y="5" width="4" height="30" fill="#767043" />
+    <line x1="43" y1="5" x2="57" y2="5" stroke="#767043" stroke-width="4" stroke-linecap="round" />
+    <!-- Agulha -->
+    <line x1="50" y1="80" x2="50" y2="105" stroke="#2b2724" stroke-width="2" />
+    
+    <!-- Linhas de medição -->
+    <line x1="45" y1="40" x2="50" y2="40" stroke="#2b2724" stroke-width="1.5" />
+    <line x1="45" y1="50" x2="53" y2="50" stroke="#2b2724" stroke-width="1.5" />
+    <line x1="45" y1="60" x2="50" y2="60" stroke="#2b2724" stroke-width="1.5" />
+    <line x1="45" y1="70" x2="53" y2="70" stroke="#2b2724" stroke-width="1.5" />
+  </g>
+
+  <!-- Grupo de Texto explicativo -->
+  <g transform="translate(15, 290)">
+    <rect width="270" height="90" rx="12" fill="#ffffff" filter="url(#shadow)" />
+    <text x="135" y="32" font-family="'Montserrat', sans-serif" font-size="14" font-weight="bold" fill="#2b2724" text-anchor="middle">FOTO DA GALERIA 2</text>
+    <text x="135" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#767043" font-weight="600" text-anchor="middle">Cuidados &amp; Vacinação</text>
+    <text x="135" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#5e5751" text-anchor="middle">Substitua por: assets/images/galeria-2.jpg</text>
+  </g>
+</svg>
